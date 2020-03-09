@@ -1,5 +1,6 @@
 <template>
   <div class="bg">
+  	<div style="width: 2.5rem; margin: 1rem 0 0 1rem;"><img src="@/assets/icons/lianyun-logo.png" alt="" style="width:100%;"/></div>
     <div class="loginbox">
       <div class="logintop">
         <div class="title">Hello,</div>

@@ -1,7 +1,7 @@
 <template>
   <div class="top">
     <div class="logoWrap">
-      <img :src="require('@/assets/icons/lianyun.png')" alt="logo">
+      <img :src="require('@/assets/icons/lianyun-logo.png')" alt="logo">
     </div>
     <h1>GREE ONLINE MONITORING</h1>
     <div class="userNameComp">
@@ -58,7 +58,7 @@ export default {
     align-items: center;
     .logoWrap {
       margin-left: 1rem;
-      width: 2.6rem;
+      width: 2rem;
       flex-shrink: 0;
       img {
         width: 100%;

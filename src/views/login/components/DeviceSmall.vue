@@ -1,6 +1,7 @@
 <template>
   <div class="bg">
       <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" class="demo-ruleForm">
+      	<div><img src="@/assets/icons/lianyun-logo-shadow.png" alt="" style="width:2.88rem; margin-top: -4rem;"/></div>
         <p class="logotitle">GREE ONLINE MONITORING</p>
         <el-form-item>
           <el-select v-model="ruleForm.org" ref="loginOrg" @blur="handleBlur" style="width: 100%;" clearable :placeholder="$t('m.login.groupSelect')" :popper-append-to-body="false">
@@ -74,7 +75,7 @@ export default ({
       top: 50%;
       transform: translate(-50%, -50%);
       .logotitle {
-        font-size: .7rem;
+        font-size: .56rem;
         line-height: .7rem;
         color: #4367f5;
         margin: .2px auto .4px;
