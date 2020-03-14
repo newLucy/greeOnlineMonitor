@@ -143,7 +143,8 @@ export default {
     	}
     },
     handlePhoneBlur () {
-      if (!this.form.account && this.form.phone.trim() && this.form.phone.trim().length <= 30) {
+      let phone = this.form.phone.trim()
+      if (!this.form.account && phone && phone.length <= 30) {
         this.form.account = this.form.phone
       }
     },

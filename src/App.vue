@@ -27,7 +27,7 @@ export default {
 				let str = agent.substring(agent.indexOf('firefox'))
 				let version = str.match(/\d+/)
 				console.log('version', version[0])
-				if(version[0] <= 50) {
+				if(version[0] <= 51) {
 					res = true
 				}
 			}

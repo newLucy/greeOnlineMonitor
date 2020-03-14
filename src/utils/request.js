@@ -64,6 +64,15 @@ service.interceptors.response.use(
         customClass: 'myMessage'
       })
     }
+  },
+  error => {
+    Message({
+      showClose: true,
+      message: '网络错误，请稍后重试！',
+      type: 'error',
+      customClass: 'myMessage'
+    })
+    return Promise.reject(error);
   }
 )
 export default service
