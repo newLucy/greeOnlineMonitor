@@ -3,7 +3,7 @@
     <div class="logoWrap">
       <img :src="require('@/assets/icons/lianyun-logo.png')" alt="logo">
     </div>
-    <h1>GREE ONLINE MONITORING</h1>
+    <h1>{{ $t('m.login.h1') }}</h1>
     <div class="userNameComp">
       <right-top-btn id="userName" @handleClick="handleClick"></right-top-btn>
     </div>
@@ -58,14 +58,14 @@ export default {
     align-items: center;
     .logoWrap {
       margin-left: 1rem;
-      width: 2rem;
+      width: 1.8rem;
       flex-shrink: 0;
       img {
         width: 100%;
       }
     }
     h1 {
-      font-size: .4rem;
+      font-size: .44rem;
       font-weight: 700;
       color: white;
       margin-left: .4rem;

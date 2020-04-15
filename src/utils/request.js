@@ -3,7 +3,7 @@ import axios from 'axios'
 import router from '../router'
 import { MessageBox, Message } from 'element-ui'
 // import store from '../store'
-var url = process.env.NODE_ENV === 'production' ? '/aircondition' : 'http://47.112.177.59:8306/aircondition' // 172.28.171.64:9090http://47.112.177.59:8306/aircondition
+var url = process.env.NODE_ENV === 'production' ? '/aircondition' : 'http://172.28.171.64:9090/aircondition' // 172.28.171.64:9090http://47.112.177.59:8306/aircondition
 Vue.prototype.$url = url
 
 const service = axios.create({

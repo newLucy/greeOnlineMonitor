@@ -2,7 +2,7 @@
   <div class="bg">
       <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" class="demo-ruleForm">
       	<div><img src="@/assets/icons/lianyun-logo-shadow.png" alt="" style="width:2.88rem; margin-top: -4rem;"/></div>
-        <p class="logotitle">GREE ONLINE MONITORING</p>
+        <p class="logotitle">{{ $t('m.login.h1') }}</p>
         <el-form-item>
           <el-select v-model="ruleForm.org" ref="loginOrg" @blur="handleBlur" style="width: 100%;" clearable :placeholder="$t('m.login.groupSelect')" :popper-append-to-body="false">
 <!--            <template v-for="item in organizations">-->

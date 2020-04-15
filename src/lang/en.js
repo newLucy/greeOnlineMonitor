@@ -1,6 +1,6 @@
 export const m = {
   login: {
-    h1: 'GREE ONLINE MONITORING',
+    h1: 'GREE Cloud Detection',
     groupSelect: 'Group Select',
     account: 'Account',
     accountWarning: 'Account is required!',
