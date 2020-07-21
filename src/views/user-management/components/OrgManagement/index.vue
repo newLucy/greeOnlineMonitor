@@ -205,7 +205,7 @@ export default {
       }).catch(err => {})
     },
     handleInput (row, param) {
-      row[param] = row[param].replace(/[^a-zA-Z0-9\u4E00-\u9FA5@_.]/g, '')
+      row[param] = row[param].replace(/[^a-zA-Z0-9\u4E00-\u9FA5@_.,]/g, '')
     }
   }
 }
