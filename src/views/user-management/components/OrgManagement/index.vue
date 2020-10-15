@@ -88,7 +88,7 @@ export default {
   },
   methods: {
     checkMailboxValue (val) {
-      let reg = /^[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.-]+([.][a-zA-Z]+){1,2}$/
+      let reg = /^[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.-]+([.][a-zA-Z]+){1,2}(;[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.-]+([.][a-zA-Z]+){1,2})*(;)?$/
       let b = !val || !reg.test(val)
       this.mailboxWarning = b
       return b
@@ -205,7 +205,7 @@ export default {
       }).catch(err => {})
     },
     handleInput (row, param) {
-      row[param] = row[param].replace(/[^a-zA-Z0-9\u4E00-\u9FA5@_.,]/g, '')
+      row[param] = row[param].replace(/[^a-zA-Z0-9\u4E00-\u9FA5@_.;]/g, '')
     }
   }
 }

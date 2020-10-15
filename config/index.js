@@ -10,7 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/aircondition': {
+        target: 'http://172.28.31.31:9090',
+        ws: false,
+        changeOrigin: true,
+        pathRewrite: {
+          '^/aircondition': '/aircondition'
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: '0.0.0.0', // can be overwritten by process.env.HOST

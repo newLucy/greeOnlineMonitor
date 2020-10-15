@@ -44,7 +44,7 @@ export default {
     }
     let barcodeValidator = (rule, value, callback) => {
       let val = value.trim()
-      if (val && !/^[0-9]{13}$/.test(val)) {
+      if (val && !/^[0-9A-Za-z]{13}$/.test(val)) {
         return callback(new Error(window.$vueI18n.t('m.home.serialWarning')))
       } else {
         callback()

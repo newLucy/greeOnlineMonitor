@@ -24,7 +24,7 @@ export const m = {
     mac: 'MAC Address',
     macWarning: 'MAC Address must be a 12-digit combination of letters or numbers.',
     serial: 'Serial Number',
-    serialWarning: 'Serial Number must be a 13-digit numbers.',
+    serialWarning: 'Serial Number must be a 13-digit combination of letters or numbers.',
     conditionMsg: 'MAC Address or Serial Number is required!'
   },
   personal: {
