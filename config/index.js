@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/aircondition': {
-        target: 'http://172.28.31.31:9090',
+        target: 'http://40.126.231.49:1920',
         ws: false,
         changeOrigin: true,
         pathRewrite: {

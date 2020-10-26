@@ -45,9 +45,9 @@ export default {
    	}
   },
   methods: {
-    handleBlur () {
-      this.$refs.manageOrg.blur()
-    }
+    // handleBlur () {
+    //   this.$refs.manageOrg.blur()
+    // }
   }
 }
 </script>
